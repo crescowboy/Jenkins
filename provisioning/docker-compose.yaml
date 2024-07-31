@@ -45,7 +45,9 @@ services:
       - 9000
 
   myapp:
-    image: jtux/spring-boot-demo
+    build:
+      context: ../
+      dockerfile: Dockerfile
     container_name: myapp
     networks:
       - cicd

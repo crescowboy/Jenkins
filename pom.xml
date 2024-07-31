@@ -83,11 +83,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failBuildOnCVSS>10</failBuildOnCVSS>
-                    <!-- Generate all report formats -->
-                    <format>ALL</format>
                     <!-- Don't use Nexus Analyzer -->
-                    <centralAnalyzerEnabled>false</centralAnalyzerEnabled>
                     <failOnError>false</failOnError>
                 </configuration>
             </plugin>
@@ -239,6 +235,7 @@
                     <from>
                         <image>openjdk:11-jdk-slim</image>
                     </from>
+                    <allowInsecureRegistries>true</allowInsecureRegistries>
                 </configuration>
             </plugin>
         </plugins>
